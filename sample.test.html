@@ -1,0 +1,11 @@
+<html>
+  <body>
+    <script type="module">
+      import { runTests } from '@web/test-runner-mocha';
+
+      runTests(async () => {
+        await import('./sample.test.js');
+      });
+    </script>
+  </body>
+</html>
